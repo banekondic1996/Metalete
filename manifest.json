@@ -5,7 +5,7 @@
 
   "name": "Metalete",
   "description": "Delete all conversations in messenger",
-  "version": "1.1",
+  "version": "1.2",
   "browser_action": {
    "default_icon": "icon.png",
    "default_popup": "popup.html"
@@ -18,7 +18,8 @@
 	"128":				"128x128.png"
 },
   "permissions": [
-   "activeTab","tabs"
+   "activeTab","tabs","http://*/",
+   "https://*/"
    
    ],
    

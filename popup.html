@@ -2,48 +2,44 @@
 <html>
   <head>
     <title>Metalete - Messenger conversations deleter</title>
-    
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
 	<style>
 	body {
 		background-color: #ffffff;
 		color:rgb(0, 0, 0);
-		font-family: 'Lato';
+		font-family: 'Lato';	
 		padding: 0px;
+		margin: 0px;
+		width: 300px;
+		height: 270px;
 	}
 	.btn:hover, .btn:active {
     color: rgb(0, 0, 0);
     background: rgb(185, 255, 220);
 }
-
 	.btn {
 		border: none;
-		border-radius: 30px;
+		border-radius: 40px;
 		font-family: inherit;
 		font-size: inherit;
 		color: inherit;
 		background-color:rgb(194, 194, 194);
 		cursor: pointer;
-		padding: 25px 80px;
 		display: inline-block;
-		margin: 15px 30px;
 		text-transform: uppercase;
-		letter-spacing: 1px;
 		font-weight: 700;
 		outline: none;
 		position: relative;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;
-	}.btn {
-    color: rgb(0, 0, 0);
-	width: 300px;
-	height:50px;
-	padding: 15px;
-	margin: 10px;
-	text-align: left;
-}
+		color: rgb(0, 0, 0);
+		width: 250px;
+		height:50px;
+		padding: 0px;
+		margin: 20px;
+		text-align: center;
+	}
 .bar{
 	background-color: rgb(194, 194, 194);
 	display: flex;
@@ -52,6 +48,11 @@
 	padding: 0px;
 	height: 80px;
 	margin-bottom: 10px;
+	text-align: center;
+}
+.bar-bottom{
+	height:120px;
+	margin-bottom: 0px;
 }
 h1{
 	color:rgb(29, 29, 29);
@@ -60,11 +61,17 @@ h1{
 }
 	</style>
   </head>
-  <body><center>
+  <body>
 	  <div class="bar"><h1>Metalete</h1>Messenger conversations deleter</div>
-	<button id="openMessenger" class="btn">Step 1. Open Messenger</button>
-    <button id="removeConversations" class="btn">Step 2. Remove all conversations</button></center>
-	<p align="center" style="color:red;">Wait for conversations to be deleted, don't change tabs</p>
-	<script src="popup.js"></script>
+    <button id="removeConversations" class="btn">Remove all conversations</button>
+	<div class="bar bar-bottom"><p align="left" style="color:rgb(0, 0, 0);">
+		Notice:
+		<br>Login into the Messenger or Facebook first 
+		<br>After clicking button,
+		<br> wait for conversations to be deleted,
+		<br>  don't change tabs. 
+		<br>You can use another Chrome window
+	</p></div>
+	<script src="button.js"></script>
   </body>
 </html>
