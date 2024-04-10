@@ -20,7 +20,9 @@
                 setTimeout(step5, 500);},
 
                 step5 = function(){
-                    $('div[aria-label="Delete chat"]').click();
+                    var elements = document.evaluate('//div[@aria-label="Delete chat"]//div[@aria-label="Delete chat"]', document, null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+                    for (var i = 0; i < elements.snapshotLength; i++) {
+                        elements.snapshotItem(i).click();}
                 setTimeout(step1, 300);};
                 step1();
 })(function(selector){ return document.querySelector(selector); 
